@@ -36,7 +36,7 @@ export class Home extends React.Component {
       <div className="Home">
         <header className="Home-header">
           <img src={logo} className="Home-logo" alt="logo" />
-          <p>{this.state.startText}</p>
+          <p className={'text-purple-600'}>{this.state.startText}</p>
           <p hidden={hidden}>hidden</p>
           <p hidden={!hidden}>dont hidden</p>
           <ul>{createListItem(this.state.listItems)}</ul>
