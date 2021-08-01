@@ -6,10 +6,6 @@ type Props = {
   buttonText: string;
 };
 
-export class Button extends React.Component<Props> {
-  render(): JSX.Element {
-    return (
-      <button onClick={this.props.onClick}>{this.props.buttonText}</button>
-    );
-  }
-}
+export const Button = (props: Props): JSX.Element => {
+  return <button onClick={props.onClick}>{props.buttonText}</button>;
+};
