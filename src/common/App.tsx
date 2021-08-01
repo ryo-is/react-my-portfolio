@@ -7,7 +7,7 @@ export const App = (): JSX.Element => {
   return (
     <div className="bg-gray-900 h-screen text-gray-200">
       <Header />
-      <div className="h-main text-xl">
+      <div className="h-main text-2xl">
         <Router>
           <Route exact path="/" component={Home} />
         </Router>

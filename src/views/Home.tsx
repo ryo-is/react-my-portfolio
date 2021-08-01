@@ -9,12 +9,18 @@ export const Home = (): JSX.Element => {
   const decrement = (): void => {
     setCount((prev) => prev - 1);
   };
+  const reset = (): void => {
+    setCount(0);
+  };
 
   return (
     <div className="flex items-center justify-center h-full">
-      <p>{count}</p>
-      <Button onClick={increment} buttonText="increment"></Button>
-      <Button onClick={decrement} buttonText="decrement"></Button>
+      <div className="flex flex-col text-center">
+        <div className="mb-2">{count}</div>
+        <Button onClick={increment} buttonText="increment"></Button>
+        <Button onClick={decrement} buttonText="decrement"></Button>
+        <Button onClick={reset} buttonText="reset"></Button>
+      </div>
     </div>
   );
 };
