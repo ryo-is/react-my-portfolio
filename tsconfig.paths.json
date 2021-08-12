@@ -4,7 +4,10 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@views/*": ["src/views/*"],
-      "@templates/*": ["src/components/templates/*"]
+      "@templates/*": ["src/components/templates/*"],
+      "@atoms/*": ["src/components/atoms/*"],
+      "@molecules/*": ["src/components/molecules/*"],
+      "@organisms/*": ["src/components/organisms/*"]
     }
   }
 }
